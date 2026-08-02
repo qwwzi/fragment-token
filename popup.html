@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>Fragment Token 提取器</title>
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="title-block">
+        <div class="title-row">
+          <img
+            id="status-dot"
+            class="brand-logo"
+            src="icons/icon128.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <h1>Fragment Token</h1>
+        </div>
+        <p class="subtitle">读取并复制 Token</p>
+      </div>
+      <button id="refresh" type="button" title="刷新 Token" aria-label="刷新 Token">
+        <span class="refresh-icon" aria-hidden="true">⟳</span>
+      </button>
+    </header>
+
+    <main>
+      <div id="status" class="status" aria-live="polite"></div>
+      <div id="cookie-list" class="cookie-list" aria-label="Token 列表"></div>
+
+      <section class="login-panel" aria-labelledby="login-title">
+        <div class="login-heading">
+          <h2 id="login-title">通过 Token 登录</h2>
+          <span>仅写入本机</span>
+        </div>
+        <form id="login-form" class="login-form">
+          <div class="login-input-row">
+            <input
+              id="login-token"
+              class="login-input"
+              type="password"
+              placeholder="粘贴 Token"
+              aria-label="Token"
+              autocomplete="off"
+              spellcheck="false"
+              required
+            />
+            <button
+              id="toggle-token"
+              class="visibility-btn"
+              type="button"
+              aria-label="显示 Token"
+              aria-pressed="false"
+            >显示</button>
+          </div>
+          <button id="login-btn" class="login-btn" type="submit">登录并刷新</button>
+          <div id="login-status" class="login-status" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span class="footer-label">本地运行，不会上传数据。</span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
