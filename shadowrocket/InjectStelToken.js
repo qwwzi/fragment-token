@@ -124,7 +124,7 @@
       var successState = readNoticeState();
       if (successState.mode !== 'success' || successState.fp !== fp) {
         writeNoticeState('success', fp);
-        $notification.post('Fragment Token Inject', 'Token 注入成功');
+        $notification.post('Fragment Token Inject', '', 'Token 注入成功');
       }
     }
 
