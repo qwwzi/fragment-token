@@ -1,0 +1,8 @@
+#!name=Fragment_Token
+#!desc=提取Token
+
+[MITM]
+hostname = %APPEND% fragment.com
+
+[Script]
+GetStelToken = type=http-request,script-path=https://raw.githubusercontent.com/qwwzi/fragment-token/main/GetStelToken.js,pattern=^https://fragment\.com(?:/|$),requires-body=0,max-size=0,script-update-interval=0,engine=jsc
