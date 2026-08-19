@@ -1,7 +1,8 @@
+#!url=https://raw.githubusercontent.com/qwwzi/fragment-token/main/shadowrocket/Fragment_Token_Inject.sgmodule
 #!name=Fragment Token Inject
-#!desc=手动输入 Token 并注入 Fragment
+#!desc=注入Token
 
-# 在 Shadowrocket 模块参数中填写 Token
+#  在此处填写Toke   ⬇️
 #!arguments=Token:
 
 [MITM]
