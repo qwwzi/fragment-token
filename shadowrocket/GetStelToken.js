@@ -90,6 +90,7 @@
       if (saved !== false) {
         $notification.post(
           '已获取 Token，点击复制',
+          '',
           stelToken
         );
       }
