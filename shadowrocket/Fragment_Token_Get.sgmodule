@@ -5,4 +5,4 @@
 hostname = %APPEND% fragment.com
 
 [Script]
-GetStelToken = type=http-request,script-path=GetStelToken.js,pattern=^https://fragment\.com(?:/|$),requires-body=0,max-size=0,script-update-interval=0,engine=jsc
+GetStelToken = type=http-request,script-path=https://raw.githubusercontent.com/qwwzi/fragment-token/main/shadowrocket/GetStelToken.js,pattern=^https://fragment\.com(?:/|$),requires-body=0,max-size=0,script-update-interval=0,engine=jsc
