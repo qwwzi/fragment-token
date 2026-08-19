@@ -89,8 +89,7 @@
       // 若持久化写入失败，不发送通知，避免退化成每个请求都重复弹窗。
       if (saved !== false) {
         $notification.post(
-          '已获取 token',
-          'fragment.com',
+          '已获取 Token，点击复制',
           stelToken
         );
       }
