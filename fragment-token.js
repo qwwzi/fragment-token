@@ -36,9 +36,9 @@
 
     if (!lastNotice || now - lastNotice >= 15000) {
       if (token) {
-        try { $notification.post("Fragment_Token", "已捕捉到Token，点击打开复制！", token); } catch (_) {}
+        try { $notification.post("Fragment Token", "已捕捉到Token，点击打开复制！", token); } catch (_) {}
       } else {
-        try { $notification.post("Fragment_Token", "未找到Token，请检查是否已登录账号！"); } catch (_) {}
+        try { $notification.post("Fragment Token", "未找到Token，请检查是否已登录账号！"); } catch (_) {}
       }
       try { $persistentStore.write(String(now), storageKey); } catch (_) {}
     }
