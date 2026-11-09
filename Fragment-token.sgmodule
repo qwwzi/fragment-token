@@ -1,0 +1,8 @@
+#!name=Fragment Token
+#!desc=读取Token
+
+[MITM]
+hostname = %APPEND% fragment.com
+
+[Script]
+Fragment_token = type=http-request,pattern=^https:\/\/fragment\.com(?::\d+)?\/,script-path=https://raw.githubusercontent.com/qwwzi/fragment-token/main/fragment-token.js
